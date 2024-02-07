@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    html {
+  margin: 0 1em;
+}
+
+img {
+	display: block;
+	margin: 2rem 0;
+  width: 100%;
+	height: auto;
+}
+</style>
 <body>
     <header>
         <h1>helooooooooooooooooooooooooooo</h1>
         <p>Lorem. This is a paragraph. HELLO</p>
     </header>
     <img src="/images/cat-jumpscare.jpg"
-    width="480" height="360"
-    alt="Cat Jumpscare">
+         alt="Cat Jumpscare"
+         width="480" height="360"
+         srcset="/images/cat-jumpscare.jpg 480w,
+                 /images/cat-jumpscare.jpg 960w,
+                 /images/cat-jumpscare.jpg 1440w,
+                 /images/cat-jumpscare.jpg 1920w"
+    >
+
 </body>
 </html>
