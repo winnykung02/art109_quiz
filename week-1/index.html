@@ -25,10 +25,11 @@ img {
 <body>
     <header>
         <h1>Downtown San Jose Bus Stops</h1>
-        <p>Placeholder.</p>
     </header>
+    <p>By Hannah Fu and Winny Kung</p>
+    <br><br><br>
     <form>
-      <label for="bus-stops">Choose your bus stop:</label>
+      <label for="bus-stops">Choose a bus stop:</label>
       <input id="bus-stops" placeholder="Type text here..." list="stops">
       <datalist id="stops">
           <option value="Frances &amp; Olsen"></option>
@@ -51,13 +52,9 @@ img {
                 <option value="Santa Clara Transit Center (Bay 7)">
       </datalist>
       <button type="submit">Submit</button> 
-    </form>
+    </form> 
 
-   <br>
-   <br>
-   <br>
-   <br>
-   <p>Choose your bus stop:</p><form> 
+   <!-- <p>Choose a bus stop:</p><form> 
     <select id="myDropdown"> 
       <option value="Option 1">Frances & Olson</option> 
       <option value="Option 2">Arques & Wolfe</option> 
@@ -76,20 +73,8 @@ img {
       <option value="Evelyn & Wolfe">Evelyn & Wolfe</option>
       <option value="Monroe & Bowers">Monroe & Bowers</option>
       <option value="Monroe & Franklin">Monroe & Franklin</option>
-      <option value="Santa Clara Transit Center (Bay 7)">Santa Clara Transit Center (Bay 7)</option>
-
-      <!--
-
-
-
-
-
-
-
- --> 
-    </select> <button type="submit">Submit</button> 
-  </form>
-</datalist>
+      <option value="Santa Clara Transit Center (Bay 7)">Santa Clara Transit Center (Bay 7)</option> -->
+  
     <header>
       <h2>Frances & Olson</h2>
     </header>
@@ -362,6 +347,20 @@ img {
              /images/santa-clara-transit-center-bay-7_1.jpg 1920w"
     >
 <hr>
+</form>
+</datalist><br><br>
+
+  <label for="file">Have a better image? Upload here for review and make a note of which stop it's for!<br></label>
+  <input id="file" name="file" type="file" accept="image/*" multiple>
+
+<br><br>
+
+  <form action="/html/tags/html_form_tag_action.cfm" method="post">
+    <div>
+      <textarea name="comments" id="comments" placeholder="Leave a comment :)"></textarea>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
 
 </body>
 </html>
